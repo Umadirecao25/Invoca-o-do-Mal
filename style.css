@@ -1,0 +1,106 @@
+@charset "uft-8";
+@font-face {
+    font-family: font1;
+    src: url(./fontes/Heartless.ttf);
+}
+
+h1{
+    font-family: font1;
+    text-align: center;
+    font-size: 250%;
+}
+body {
+    margin: o;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c5c5c5;
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute; /* Torna a posição do container */
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); /* para alterar o eixo */
+}
+
+.navegacao{
+    position: absolute; /*Posição em relação ao container*/
+    bottom: 20px; /*Distância a partir da base */
+    left: 50%; /*Distância a partir da esquerda*/
+    transform: translate(-50%);  /*Alterar o eixo principal*/
+    display: flex; /*Colocar o conteúdo lado a lado*/
+}
+
+.bar {
+    background-color: #ff6868; /*Plano de fundo do indicador*/
+    width: 30px; /*largura do indicador*/
+    height: 5px; /*Altura do indicador*/
+    margin: 6px; /*Espaço entre os indicadores*/
+    transition: .3s; /*Tramsição dp hover*/
+    cursor: pointer; /*Ponteiro do Mouse*/
+}
+
+input {
+    display: none; /*Ocultar as input do tipo Radio*/
+}
+
+
+.imagens{
+    display: flex; /*Posiciona a imagem ao lado da outra*/
+    width: 600%; /*define o tamanho da div imagens*/
+    height: 100%; /*define a altura a div imagens*/
+}
+
+.imagem{
+    width: 16.6666666667%; /*Define a proporção do tamanho de cada imagem em relação ao elemento pai*/
+    transition: .5s; /*efeito na transição das imagens*/
+}
+
+.imagem img {
+width: 100%;
+height: 100%;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0%;
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -16.6666666667%;
+}
+#imagem3:checked ~ .img1 {
+    margin-left: -33,33333333;
+}
+#imagem4:checked ~ .img1 {
+    margin-left: -50%;
+}
+ #imagem5:checked ~ .img1{
+    margin-left:-66.6666666667%;
+ }
+
+ #imagem6:checked ~ .img1 {
+    margin-left: -83.3333333333% ;
+ }
+
+body{
+    background-color: rgb(252, 7, 7);
+    color: #000000;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: cursive;
+    
+}
+
+
+
+
+
